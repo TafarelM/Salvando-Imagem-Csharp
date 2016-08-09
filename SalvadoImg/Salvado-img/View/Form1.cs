@@ -52,6 +52,7 @@ namespace View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //exibir img do banco
             SqlConnection conn = new SqlConnection(@"Data Source=LOCALHOST;Initial Catalog=SalvandoImagem;Integrated Security=True");
             SqlCommand comand = new SqlCommand("SELECT Foto FROM Cliente_Foto WHERE IdCliente = 1", conn);
 
